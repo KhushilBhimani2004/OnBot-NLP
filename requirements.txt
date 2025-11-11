@@ -1,0 +1,10 @@
+streamlit
+openai>=1.0.0
+pdfplumber
+python-docx
+pandas
+PyPDF2
+scikit-learn
+sentence-transformers
+torch
+re
