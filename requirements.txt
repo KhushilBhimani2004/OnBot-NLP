@@ -6,5 +6,4 @@ pandas
 PyPDF2
 scikit-learn
 sentence-transformers
-torch
-re
+torch --index-url https://download.pytorch.org/whl/cpu
