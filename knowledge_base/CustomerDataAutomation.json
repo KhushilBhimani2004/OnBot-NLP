@@ -1,0 +1,45 @@
+{
+    "botName": "CustomerDataAutomation",
+    "description": "Extracts customer subscription data from Excel and updates CRM system.",
+    "variables": [
+        {
+            "name": "CustomerFilePath",
+            "type": "String"
+        },
+        {
+            "name": "CRM_URL",
+            "type": "String"
+        }
+    ],
+    "actions": [
+        {
+            "command": "Open Excel",
+            "file": "CustomerData.xlsx"
+        },
+        {
+            "command": "Read Range",
+            "sheet": "Subscriptions"
+        },
+        {
+            "command": "Validate Data",
+            "rule": "CheckMissingEmails"
+        },
+        {
+            "command": "Launch Browser",
+            "url": "${CRM_URL}"
+        },
+        {
+            "command": "Login",
+            "credentials": "CRM_Creds"
+        },
+        {
+            "command": "Update Records",
+            "loop": "Each Customer"
+        }
+    ],
+    "dependencies": [
+        "Excel",
+        "Chrome Browser",
+        "CRM Portal"
+    ]
+}

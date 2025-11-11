@@ -1,0 +1,8 @@
+{
+    "user_name": "Khushil Bhimani",
+    "upload_date": "2025-10-29 17:25:28",
+    "bot_name": "GFB Testing Bot",
+    "description": "This automation basically helps in SAMS part it will, take input the SAMS excel file, and will calculate the column values , columns are J,K,L , they have their each seperate formula, and we are converting the excel data into data table and returning the datatable as output, there can be multiple combination of werse code , combination of multiple werse codes are seperated by comma ' , ' .\n",
+    "functions_details": "There is only one C# Script/Function used, the function name is getCount, it basically do all the necessary calculations, counts the count of given code and returns a data table as output\n",
+    "comments": "If the output of any code count is 0, then it will show as \"NA-SAMS\" in output.\nThe output is displayed as Data Table."
+}
